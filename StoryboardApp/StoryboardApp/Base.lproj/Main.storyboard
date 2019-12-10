@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StoryboardApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zT2-D9-7RR" userLabel="FirstButton">
+                                <rect key="frame" x="132" y="433" width="150" height="30"/>
+                                <state key="normal" title="Sign in with Facebook"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXh-xU-RX1" userLabel="SecondButton">
+                                <rect key="frame" x="141" y="473" width="132" height="30"/>
+                                <state key="normal" title="Sign in with Google"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UQb-JA-ogW" userLabel="ThirdButton">
+                                <rect key="frame" x="147" y="513" width="120" height="30"/>
+                                <state key="normal" title="Sign in with Email"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Create and Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZZ-f1-NXY">
+                                <rect key="frame" x="98" y="392" width="218" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social  Squid" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-kp-npJ">
+                                <rect key="frame" x="149" y="252.5" width="116.5" height="109.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zT2-D9-7RR" firstAttribute="top" secondItem="mZZ-f1-NXY" secondAttribute="bottom" constant="20" id="9WG-c6-gdT"/>
+                            <constraint firstItem="UQb-JA-ogW" firstAttribute="top" secondItem="aXh-xU-RX1" secondAttribute="bottom" constant="10" id="BU0-zE-kGY"/>
+                            <constraint firstItem="h4V-kp-npJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L3W-Ip-hKk"/>
+                            <constraint firstItem="aXh-xU-RX1" firstAttribute="top" secondItem="zT2-D9-7RR" secondAttribute="bottom" constant="10" id="Mbq-QK-KmJ"/>
+                            <constraint firstItem="zT2-D9-7RR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QiH-bz-s7K"/>
+                            <constraint firstItem="UQb-JA-ogW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YWp-cO-IKb"/>
+                            <constraint firstItem="mZZ-f1-NXY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dtp-5D-gdY"/>
+                            <constraint firstItem="aXh-xU-RX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mfC-5B-g4a"/>
+                            <constraint firstItem="mZZ-f1-NXY" firstAttribute="top" secondItem="h4V-kp-npJ" secondAttribute="bottom" constant="30" id="pc1-LJ-NCu"/>
+                            <constraint firstItem="zT2-D9-7RR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uew-wW-tn9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="94"/>
+        </scene>
+    </scenes>
+</document>
